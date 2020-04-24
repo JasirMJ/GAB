@@ -172,6 +172,7 @@ class SpeakMessage(ListAPIView):
         })
 
 class GetQuestions(ListAPIView):
+
     serializer_class = QuestionsSerializer
     def get_queryset(self):
         keyword = self.request.GET['keyword']
